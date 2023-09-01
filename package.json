@@ -1,0 +1,17 @@
+{
+  "name": "store-image-clapps",
+  "version": "1.0.0",
+  "description": "iamge for clapps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yudi Edri Alviska",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
