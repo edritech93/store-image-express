@@ -16,6 +16,7 @@ app.get("/import-list", async (req, res) => {
   const arrayRes = dataPath.map((e) => {
     return `/attachments/${e}`;
   });
+  console.log("arrayRes.length: ", arrayRes.length);
   res.status(200).json(arrayRes);
 });
 
