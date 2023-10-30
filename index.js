@@ -20,6 +20,14 @@ app.get("/import-list", async (req, res) => {
   res.status(200).json(arrayRes);
 });
 
+app.get("/find-by-index", async (req, res) => {
+  const { i } = req.query;
+  const dataPath = await getAllPath();
+  const objFind = dataPath.find((_, index) => index === parseInt(i, 10));
+  console.log("objFind: ", objFind);
+  res.status(200).json({ data: objFind });
+});
+
 app.listen(port, () => {
   console.log(`[Server]: I am running at http://localhost:${port}`);
 });
